@@ -1,0 +1,10 @@
+.intro {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.Gallery {
+    padding: 1em;
+    margin: 1em;
+}

@@ -1,0 +1,11 @@
+.Gallery {
+    padding: 1em;
+    margin: 1em;
+}
+
+.GalleryBox {
+    padding: 2em;
+    background-color: aliceblue;
+    border-color: aliceblue;
+    border-width: 2px;
+}
