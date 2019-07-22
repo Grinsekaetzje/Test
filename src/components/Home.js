@@ -1,27 +1,17 @@
 import React from 'react';
-import Banner from './photos/Home.jpg'
-import { Carousel, Jumbotron, Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
+import { Carousel, Button } from 'react-bootstrap'
+import Banner from './photos/Home2.jpeg'
 
 function Home() {
     return (
-        <div>
+        <div className='contain'>
             <Carousel>
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
                     src={Banner}
-                    alt="First slide"
-                    />
-                    <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <img
-                    className="d-block w-100"
-                    src={Banner}
-                    alt="First slide"
+                    alt="First slide" height={560}
                     />
                     <Carousel.Caption>
                     <h3>First slide label</h3>
@@ -29,16 +19,16 @@ function Home() {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+            <h1 className='title'>Denise F. Photography</h1>
 
-            <Jumbotron>
-                <h1>Denise Photograph</h1>
-                <p>
+            <div className='home-box'>
+                <p id='home-text'>
                     An envision upon all things we find beautiful in this world. The eye is influxed with so many images, that is why us artist's must capture the ones that truly show beauty. 
                 </p>
                 <p>
-                    <Button variant="primary" href='/about'>Learn more</Button>
+                    <Button variant='flat'><Link to='/about' style={{ all: 'inherit' }}>Learn more</Link></Button>
                 </p>
-            </Jumbotron>
+            </div>
         </div>
   )};
 

@@ -1,33 +1,160 @@
-.App {
-  text-align: center;
+/* Preloading required fonts */
+@font-face {
+    font-family: 'Abadi Extra Light';
+    src: url(components/fonts/Abadi.ttf);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: 'Ink Free Regular';
+    src: url(components/fonts/Inkfree.woff);
+}
+/* */
+
+/* Navigation Bar*/
+li {
+    font: 24px "Abadi MT Pro Extra Light";
+    transition-duration: .5s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+    background-color: rgb(163,2,113);
+    height: 60px;
+    border-bottom: 1px solid black;
 }
 
-.App-link {
-  color: #61dafb;
+.insta {
+    position: absolute;
+    right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.insta img {
+    width: 100px;
+}
+
+.nav-link {
+    font-family: Abadi Extra Light;
+    color: rgb(255,255,255);
+    display: inline-block;
+    margin: 5px 2em 0 2em;
+}
+
+.dropdown-menu {
+    background-color: rgba(163,2,113,0.5);
+    margin-top: 0;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  display: block;
+}
+/* */
+
+/* Home */
+.contain {
+    position: relative;
+    text-align: center;
+}
+
+.d-block {
+    border-radius: 0;
+    padding: 0;
+}
+
+h1 {
+    font: 90px Ink Free Regular, Helvetica, sans-serif;
+    color: rgb(194,1,92);
+}
+
+.title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+p {
+    font-family: Abadi Extra Light;
+}
+
+#home-text {
+    padding: 45px 70px 10px 70px;
+    font-style: italic;
+    font-size: 25px;
+    color: rgb(134,1,92);
+}
+
+.btn-flat {
+    background-color: rgb(163,2,113);
+    font-size: 25px;
+    color: rgb(255,255,255);
+}
+
+.home-box {
+    max-height: 300px;
+}
+/* */
+
+/* About Us */
+.Gallery {
+    padding: 1em;
+    margin: 1em;
+}
+
+.intro {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.imagery {
+    height: 400px;
+    width: auto;
+}
+/* */
+
+/* EU */
+.GalleryBox {
+    display: flexbox;
+    justify-content: space-around;
+    padding: 2em;
+    background-color: aliceblue;
+    border-color: aliceblue;
+    border-width: 2px;
+}
+/* */
+
+/* Footer */
+#bottom {
+    min-height: 25em;
+    background-color: rgb(169, 169, 169);
+}
+
+.links {
+    padding-top: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navi {
+    font-size: 1.5em;
+    color: rgb(21, 21, 21);
+}
+/* */
+
+img {
+    width: 230px;
+    border-radius: 15px;
+    background-position: center;
+    padding: 20px;
+}
+
+.caro {
+    max-height: 450px;
+}
+
+.Gallery {
+    padding: 1em;
+    margin: 1em;
 }

@@ -1,18 +1,21 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap'
-import './Footer.css'
+import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
-        <div class='footer'>
-            <div class='links'>
-                <ul class='navi'>
-                    <Nav.Link href="/" class='link'>Home</Nav.Link> 
-                    <Nav.Link href="/about" class='link'>About</Nav.Link>
-                    <Nav.Link href="/usa" class='link'>Europe Gallery</Nav.Link> 
-                    <Nav.Link href="/eu" class='link'>America Gallery</Nav.Link>
-                </ul>
-            </div>
+        <div>
+        <div className='links'>
+            <Link to={'/Test'} className='navi'>Home</Link>
+            <Link to={'/about'} className='navi'>About</Link>
+            <Link to={'/eu'} className='navi'>Europe</Link>
+            <Link to={'/usa'} className='navi'>America</Link>
+        </div>
+        <div className='links'>Sign up to keep with the latest posts</div>
+        <form className='links'>
+            <input placeholder='Email' />
+        </form>
+        <div className='links'>Or follow me on my social medias</div>
+        <a className='links' href="https://www.instagram.com/denisefphotography/">Instagram</a>
         </div>
   )};
 
